@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Installing dokcer on rempte machine
+      uses: shinhwagk/remote-bash@0.0.1
       with:
         host: "172.31.89.114"
         username: ubuntu

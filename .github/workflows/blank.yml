@@ -19,7 +19,7 @@ jobs:
       # uses: nerd4ever/ssh-action@f86e9c64931e1fd51efc8a02890af2e0c328e515
       uses: nerd4ever/ssh-action@0.1.0
       with:
-        host: 3.89.8.84
+        host: ubuntu@ec2-3-89-8-84.compute-1.amazonaws.com
         user: ubuntu
         port: 22
         key: my07.pem

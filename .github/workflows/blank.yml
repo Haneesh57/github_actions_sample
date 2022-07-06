@@ -17,10 +17,10 @@ jobs:
     steps:
     - name: Remote SSH Pusblish
       # uses: nerd4ever/ssh-action@f86e9c64931e1fd51efc8a02890af2e0c328e515
-      uses: nerd4ever/ssh-action@0.1.0
+      uses: kielabokkie/ssh-key-and-known-hosts-action@v1.3.0
       with:
-        host: ubuntu@ec2-3-89-8-84.compute-1.amazonaws.com
+        ssh-host: 3.89.8.84
         user: ubuntu
-        port: 22
-        key: my07.pem
+        ssh-port: 22
+        ssh-private-key: my07.pem
         command: sudo apt-get update; sudo apt-get install docker.io -y

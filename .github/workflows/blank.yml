@@ -19,7 +19,7 @@ jobs:
       # uses: nerd4ever/ssh-action@f86e9c64931e1fd51efc8a02890af2e0c328e515
       uses: kielabokkie/ssh-key-and-known-hosts-action@v1.3.0
       with:
-        ssh-private-key: ${{ secrets.MY07 }}
+        ssh-private-key: ${{ env.MY07 }}
         ssh-host: 3.89.8.84
         user: ubuntu
         ssh-port: 22

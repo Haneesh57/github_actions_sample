@@ -22,5 +22,5 @@ jobs:
         ssh-host: 3.89.8.84
         user: ubuntu
         ssh-port: 22
-        ssh-private-key: my07.pem
+        ssh-private-key: ${{ secrets.MY07 }}
         command: sudo apt-get update; sudo apt-get install docker.io -y
